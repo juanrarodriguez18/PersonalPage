@@ -72,19 +72,46 @@ header.sticky {
 	z-index: 999;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
     .navbar-fixed-top {
-        background-color: transparent;
-    }
+		background-color: transparent;
+	}
+	
+	.navbar-nav {
+		width: 100% !important;
+	}
 
-    .nav li a{
+    .nav li a {
         color: whitesmoke;
         text-shadow: 2px 2px rgba(0,0,0,.5);
-    }
+	}
+	
+	.nav li a:hover {
+        color: whitesmoke;
+		text-shadow: 2px 2px rgba(200,200,200,.3);
+		background: none !important;
+	}
+
+	.top-logo {
+		margin-left: 2em;
+		float: left !important;
+	}
+
+	.navbar-nav .top-links{
+		float: right !important;
+	}
+
+	.navbar-nav .top-contact{
+		margin-right: 2em;
+	}
+
+	.navbar-fixed-top li a:focus{
+		background: none;
+	}
 }
 
 .navbar-fixed-top.scrolled {
-    background-color: #fff !important;
+    background-color: #3498db !important;
     transition: background-color 200ms linear;
 }
 
@@ -93,8 +120,13 @@ header.sticky {
 }
 
 .navbar-fixed-top.scrolled li a{
-    color: #3498db;
+    color: whitesmoke;
     text-shadow: none;
+}
+
+.navbar-fixed-top.scrolled li a:focus{
+    color: whitesmoke;
+	background: rgba(255,255,255,0.2);
 }
 
 #menu.active {
@@ -233,7 +265,7 @@ footer {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	background: #3498db
+	background: #0099ff;
 }
 
 .background-alt {
@@ -245,7 +277,7 @@ footer {
 	height: 100vh;
 	min-height: 500px;
 	max-height: 1080px;
-	background: url(../images/lead-bg.jpg);
+	background: url(../images/header.jpg);
 	background-size: cover;
 	padding: 15px;
 	overflow: hidden
@@ -275,7 +307,8 @@ footer {
 }
 
 #lead-content h2 {
-	color: #a0cfee;
+	color: #0099ff;
+	text-shadow: 2px 2px rgba(255,255,255,0.2);
 	font-weight: 500;
 	font-size: 2.25em;
 	margin-bottom: 15px
@@ -289,7 +322,7 @@ footer {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: rgba(33, 125, 187, 0.8);
+	background: rgba(33, 125, 187, 0.2);
 	z-index: 1
 }
 
@@ -311,7 +344,7 @@ footer {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	border: 3px solid #a0cfee;
+	border: 3px solid #0099ff;
 	text-align: center
 }
 
@@ -708,6 +741,34 @@ footer {
 	padding: 0 0 0 15px
 }
 
+#lead-content h1 {
+	font-size: 3em;
+	margin-bottom: 0.2em;
+}
+
+.typewriter h1 {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	border-right: .15em solid transparent; /* The typwriter cursor */
+	white-space: nowrap; /* Keeps the content on a single line */
+	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: .15em; /* Adjust as needed */
+	animation: 
+	  typing 3.5s steps(40, end),
+	  blink-caret .75s step-end 6;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0 }
+	to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: #0099ff; }
+  }
+
 @media only screen and (max-width: 750px) {
 	#experience-timeline:before,
 	#experience-timeline:after {
@@ -741,9 +802,6 @@ footer {
 		transform: none;
 		left: auto;
 		top: auto
-	}
-	#lead-content h1 {
-		font-size: 3em
 	}
 	#lead-content h2 {
 		font-size: 1.75em

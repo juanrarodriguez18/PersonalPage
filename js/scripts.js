@@ -97,7 +97,7 @@
     $(document).scroll(function () {
         var $nav = $(".navbar-fixed-top");
         var $lead_overlay = $('#lead-overlay');
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $lead_overlay.height());//$nav.height());
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $lead_overlay.height()-1);//$nav.height());
     });
 
 })(jQuery);
