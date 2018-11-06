@@ -368,7 +368,8 @@ footer {
 
 #about {
 	padding: 75px 15px;
-	border-bottom: 1px solid #dcd9d9
+	border-bottom: 1px solid #dcd9d9;
+	text-align: center;
 }
 
 #about h2 {
@@ -377,17 +378,23 @@ footer {
 
 #about p {
 	color: #74808a;
-	margin: 0
+	margin: 2em 0 0 0;
+	text-align: left;
 }
 
 #experience {
 	padding: 50px 15px;
 	text-align: center;
-	border-bottom: 1px solid #dcd9d9
+	border-bottom: 1px solid #dcd9d9;
+	background: url(../images/city-experiencie.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #experience h2 {
-	color: #374054
+	color: whitesmoke;
 }
 
 #experience-timeline {
@@ -454,7 +461,7 @@ footer {
 	position: relative;
 	display: block;
 	vertical-align: top;
-	margin-bottom: 30px
+	margin-bottom: 30px;
 }
 
 .vtimeline-icon {
@@ -481,8 +488,9 @@ footer {
 	position: absolute;
 	left: 0;
 	top: 10px;
-	font-weight: 300;
-	color: #374054
+	font-weight: 500;
+	color: whitesmoke;
+	text-shadow: 1px 1px black;
 }
 
 #education {
@@ -537,7 +545,12 @@ footer {
 #projects {
 	padding: 50px 15px;
 	border-bottom: 1px solid #dcd9d9;
-	text-align: center
+	text-align: center;
+	background: url(../images/project-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #projects h2 {
@@ -820,12 +833,6 @@ footer {
 	}
 	#lead-content h2 {
 		font-size: 1.75em
-	}
-	#about {
-		text-align: center
-	}
-	#about p {
-		text-align: left
 	}
 }
 
