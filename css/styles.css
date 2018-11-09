@@ -110,6 +110,13 @@ header.sticky {
 	}
 }
 
+cite {
+	float: left;
+	margin-top: 2ch;
+	text-align: center;
+	width: 100%;
+}
+
 .navbar-fixed-top.scrolled {
     background-color: #3498db !important;
     transition: background-color 200ms linear;
