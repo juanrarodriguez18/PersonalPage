@@ -272,7 +272,7 @@ footer {
 	left: 0;
 	right: 0;
 	margin: 0 auto;
-	background: #0099ff;
+	background: #0274c0;
 }
 
 .background-alt {
@@ -314,7 +314,7 @@ footer {
 }
 
 #lead-content h2 {
-	color: #0099ff;
+	color: #0274c0;
 	text-shadow: 2px 2px rgba(255,255,255,0.2);
 	font-weight: 500;
 	font-size: 2.25em;
@@ -351,7 +351,7 @@ footer {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	border: 3px solid #0099ff;
+	border: 3px solid #0274c0;
 	text-align: center
 }
 
@@ -773,6 +773,7 @@ footer {
 	white-space: nowrap; /* Keeps the content on a single line */
 	margin: 0 auto; /* Gives that scrolling effect as the typing happens */
 	letter-spacing: .15em; /* Adjust as needed */
+	text-shadow: 2px 2px rgba(255,255,255,0.2);
 	animation: 
 	  typing 3.5s steps(40, end),
 	  blink-caret .75s step-end 6;
@@ -787,7 +788,7 @@ footer {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
 	from, to { border-color: transparent }
-	50% { border-color: #0099ff; }
+	50% { border-color: #0274c0; }
   }
 
 @media only screen and (max-width: 750px) {
