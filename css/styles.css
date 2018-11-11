@@ -1,3 +1,8 @@
+@font-face {
+    font-family: WildOnes;
+    src: url(../libs/font-wild-ones/Wild_Ones.otf);
+}
+
 body {
 	font-family: 'Lato', sans-serif;
 	font-size: 16px
@@ -72,10 +77,66 @@ header.sticky {
 	z-index: 999;
 }
 
+@media screen and (min-width: 769px) and (max-width: 800px){
+	.top-logo {
+		margin-left: 1em !important;
+	}
+}
+
 @media screen and (min-width: 769px){
     .navbar-fixed-top {
 		background-color: transparent;
 	}
+	
+	.navbar-nav {
+		width: 100% !important;
+	}
+
+	.nav .top-links-container li{
+		display:inline-block;
+	}
+    .nav li a {
+        color: whitesmoke;
+		text-shadow: 2px 2px rgba(0,0,0,.5);
+		float: left;
+		padding: 15px 10px 13px;
+		text-decoration: none;
+	}
+	
+	.nav li a:hover {
+        color: whitesmoke;
+		text-shadow: 2px 2px rgba(100,100,100,.3);
+		background: none !important;
+	}
+
+	.top-logo {
+		font-family: WildOnes;
+		font-size: 18pt;
+		margin-left: 2em;
+		float: left !important;
+	}
+
+	.top-logo a {
+		padding: 9px 10px 20px !important;
+	}
+
+	.navbar-nav .top-links-container{
+		width: auto;
+		height: 25px;
+		position: relative;
+		float: right;
+	}
+
+	.navbar-nav .top-contact{
+		margin-right: 2em;
+	}
+
+	.navbar-fixed-top li a:focus{
+		background: none;
+	}
+}
+
+@media screen and (max-width: 769px){
 	
 	.navbar-nav {
 		width: 100% !important;
@@ -88,21 +149,13 @@ header.sticky {
 	
 	.nav li a:hover {
         color: whitesmoke;
-		text-shadow: 2px 2px rgba(200,200,200,.3);
+		text-shadow: 2px 2px rgba(100,100,100,.3);
 		background: none !important;
 	}
 
 	.top-logo {
-		margin-left: 2em;
-		float: left !important;
-	}
-
-	.navbar-nav .top-links{
-		float: right !important;
-	}
-
-	.navbar-nav .top-contact{
-		margin-right: 2em;
+		font-family: WildOnes;
+		font-size: 18pt;
 	}
 
 	.navbar-fixed-top li a:focus{
@@ -163,7 +216,7 @@ cite {
 	padding-right: 15px;
 	padding-top: 10px;
 	cursor: pointer;
-	color: #3498db
+	color: whitesmoke;
 }
 
 #mobile-menu-close span {

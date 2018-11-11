@@ -11,6 +11,7 @@
 */
 
 (function($) {
+    var menu_opened = false;
 
     // Remove no-js class
     $('html').removeClass('no-js');
@@ -100,4 +101,16 @@
         $nav.toggleClass('scrolled', $(this).scrollTop() > $lead_overlay.height()-1);//$nav.height());
     });
 
+    $(document).click(function(e) {
+        if (menu_opened && $('header, body').hasClass('active') && !$(e.target).is('#navigation')) {
+            $('header, body').removeClass('active'); 
+            menu_opened = false;
+        }else{
+            if($('header, body').hasClass('active')){
+                menu_opened = true;
+            }else{
+                menu_opened = false;
+            }
+        }
+    });
 })(jQuery);
