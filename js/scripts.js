@@ -101,7 +101,7 @@
         $nav.toggleClass('scrolled', $(this).scrollTop() > $lead_overlay.height()-1);//$nav.height());
     });
 
-    $(document).on('click touchstart', function(e) {
+    $(document).on('touchstart',function(e) {
         if (menu_opened && $('header, body').hasClass('active') && !$(e.target).is('#navigation')) {
             $('header, body').removeClass('active'); 
             menu_opened = false;
