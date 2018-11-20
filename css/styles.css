@@ -619,6 +619,10 @@ footer {
 	margin-bottom: 50px
 }
 
+#projects img:nth-child(1){
+	margin: 1em;
+}
+
 .project {
 	position: relative;
 	max-width: 900px;
