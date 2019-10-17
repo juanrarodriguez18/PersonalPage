@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.1.5, 1 December 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{LightBlue}{HTML}{0074D9}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{LightBlue}
+\colorlet{accent}{LightBlue}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Juan Ramón Rodríguez Rosado}
+\tagline{Ingeniero del Software enfocado en el BI \newline y en el desarrollo de Aplicaciones Web}
+\photo{2.8cm}{Foto_Perfil}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{juanrarodriguez18@gmail.com}
+  \phone{606987666}
+  \location{Huércal de Almería, 04230}
+  \newline
+  % \location{Location, COUNTRY}
+  \homepage{juanrarodriguez.duckdns.org}
+  % \twitter{@twitterhandle}
+  \linkedin{linkedin.com/in/juanrarodriguez18}
+  \github{github.com/juanrarodriguez18}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+  % \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experiencia}
+
+\cvevent{Consultor BI Senior}{Viewnext}{Septiembre 2017 -- Actualidad}{Almería}
+\begin{itemize}
+\item Desarrollo de Informes y Cuadros de Mando con MicroStrategy y Power BI.
+\item Manejo de datos y desarrollos con tecnologías como Teradata, Oracle Database y SAP BW.
+\item Aporte de valor a los Cuadros de Mando de MicroStrategy mediante el uso de JavaScript y CSS.
+\item Desarrollo de Componentes a medida en Power BI con TypeScript.
+\item Realización de manuales y búsqueda de información sobre nuevas tecnologías de los proyectos.
+\item Aseguramiento de la calidad y elaboración de la documentación en la entrega de proyectos.
+\item Desarrollo de flujos de datos con SAS Data Integration, enriqueciendo la funcionalidad de los flujos con código SAS.
+\item Manejo de datos y desarrollos con tecnologías como Teradata, Oracle Database y SAP BW.
+\end{itemize}
+
+\divider
+
+\cvevent{Q\&A Tester}{Sopra Steria}{Febrero 2017 -- Agosto 2017}{Sevilla}
+\begin{itemize}
+\item Realización de pruebas funcionales y automatizadas. 
+\item Desarrollo de proyectos con las tecnologías de Java, Maven e Hibernate para proyectos internos. 
+\item Realización de documentación interna y externa para la empresa. 
+\end{itemize}
+
+\cvsection{Proyectos}
+
+\cvevent{\normalsize DreamStill, Trabajo de Fin de Grado | dreamstillapp.herokuapp.com}
+{Desarrollador Web, Octubre 2016 a Junio 2017}{}{}
+\begin{itemize}
+\item Proyecto desarrollado con las tecnologías, Node.js, Angular2, Base de
+datos NoSQL (Firebase) y con automatización de Pruebas con
+SeleniumJS.
+\item Aplicación Web que permite recaudar datos de distintas APIs de sueño
+y mostrarlos en gráficas y eventos en un calendario Web.
+\end{itemize}
+
+\divider
+
+\cvevent{\normalsize Shipmee, Trabajo de Asignatura | shipmee.es}
+{Desarrollador de BackEnd, Febrero a Julio 2017}{}{}
+\begin{itemize}
+\item Proyecto desarrollado con las tecnologías Java, Maven, Spring e
+Hibernate.
+\item Aplicación Web para el envío de paquetes compartido, solución para
+abaratar costes al enviar paquetes.
+\item Equipo de 6 personas multidisciplinares.
+\end{itemize}
+
+\end{document}
